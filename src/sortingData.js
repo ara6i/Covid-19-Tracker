@@ -21,7 +21,7 @@ console.log(casesTypeColors["recovered"].color);
 export const sortData = (data) => {
   let sortedData = [...data];
 
-  return sortedData.sort((a, b) => (a.cases > b.cases ? -1 : 1));
+  return sortedData.sort((a, b) => (b.cases-a.cases));
 };
 
 export const prettyPrintStat = (stat) =>
